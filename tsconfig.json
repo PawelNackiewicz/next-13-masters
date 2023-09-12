@@ -25,12 +25,9 @@
 			}
 		],
 		"paths": {
-			"@/components/*": [
-				"src/ui/*"
-			],
 			"@/*": [
 				"./src/*"
-			],
+			]
 		}
 	},
 	"include": [
