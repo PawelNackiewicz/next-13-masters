@@ -1,3 +1,5 @@
+import { formatMoney } from "@/utils";
+
 type ProductListItemDescription = {
     name: string,
     category: string,
@@ -11,7 +13,7 @@ export const ProductListItemDescription: React.FC<ProductListItemDescription> = 
                 <p className="font-semibold text-lg">{name}</p>
                 <p className="text-sm">{category}</p>
             </div>
-            <p>{price}</p>
+            <p>{formatMoney(price / 100)}</p>
         </div>
     )
 };
